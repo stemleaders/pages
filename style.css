@@ -1,0 +1,71 @@
+body{
+    /*背景色：灰色*/
+    background-color: #f0f0f0;
+    /*上下左右に余白*/
+    padding: 10px;
+    /*フォントのサイズ*/
+    font-size: 14px;
+    /*フォントの色　黒すぎると見づらいので灰色の方が良い*/
+    color: #666;
+  }
+  
+  .container{
+    width: 800px;
+    /*中央に自動的に揃える*/
+    margin: 0 auto;
+    /*4つの要素で指定：x,y,ぼかし, 色と透明度*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  }
+  
+  header{
+    background-color: #7fffd4;
+    padding: 10px;
+    color: #fff;
+  }
+  header h1{
+    margin: 0;
+    font-size: 24px;
+    /*normalやbold(太字)がある*/
+    font-weight: normal;
+    text-align: center;
+  }
+  
+  .main_information img{
+    float: left;
+    margin: 0 10px 10px 0;
+  }
+  
+  .content {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .discography h2 {
+    /*floatによる回り込みを解除->写真の下に行く*/
+    clear: left;
+    font-weight: normal;
+    font-size: 100%;
+    margin: 0;
+    background-color: #7fffd4;
+    padding: 5px 10px;
+  }
+  .discography {
+    margin: 0 0 20px;
+  }
+  .discography ol {
+    padding: 0;
+    margin: 0;
+    list-style: decimal inside;
+  }
+  .discography li {
+    border-bottom: 1px solid #ccc;
+    width: 40%;
+    float: left;
+    padding: 5px 10px;
+  }
+  
+  .clearfix:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
